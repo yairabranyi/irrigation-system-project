@@ -1,0 +1,15 @@
+*,*::before,*::after{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+ }
+ html,body{
+    height:100%;	
+ }
+ html{
+   font-size:10px;	
+   /* all other length can be in rem on a ratio of 1/10 */
+ }
+ body{
+   font-size:1.6rem;
+ }
