@@ -1,0 +1,16 @@
+.weather-forecast-wraper{
+display: flex;
+justify-content: space-evenly;
+
+}
+
+.daily-forecast-wraper{
+    /* display: flex;
+    flex-direction: column; */
+    box-shadow: 1px 1px 3px 1px #888888;
+    padding: 1px;    
+}
+
+.single-day-icone{
+    width: 5rem;
+}

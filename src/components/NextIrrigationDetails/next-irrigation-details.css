@@ -1,0 +1,14 @@
+.next-irrigation-details{
+    background-image: linear-gradient(to right, #B7D654,#53C2B2);
+    color: white;
+    padding: 1.5rem;
+}
+
+h1{
+    margin: 0PX;
+}
+
+h3{
+   margin: 0px;
+   font-weight: 500;
+}

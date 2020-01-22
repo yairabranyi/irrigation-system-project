@@ -1,12 +1,17 @@
 import React from 'react'
-import WeatherDisplay from './WeatherDisplay'
-import '../css/weather-display-wraper.css'
+import CorrentWeatherDisplay from './CorrentWeatherDisplay/CorrentWeatherDisplay'
+import NextIrrigationDetails from './NextIrrigationDetails/NextIrrigationDetails'
+import WeatherForecast from './WeatherForecast/WeatherForecast'
+import './CorrentWeatherDisplay/current-weather-display-wraper.css'
+import './NextIrrigationDetails/next-irrigation-details.css'
 
 function Home(props) {
     return(
         <div>
         <header className="page-header">Home</header>
-        <WeatherDisplay/>
+        <CorrentWeatherDisplay/>
+        <NextIrrigationDetails/>
+        <WeatherForecast/>
         </div>
     )
   

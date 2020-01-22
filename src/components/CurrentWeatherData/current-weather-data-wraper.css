@@ -1,0 +1,17 @@
+.current-weather-data-wraper{
+    /* color: coral; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+ul{
+    list-style-type: none;
+    text-align: left;
+    padding: 0px;
+}
+
+.main-weather-icon{
+    width: 12rem;
+}
