@@ -1,10 +1,17 @@
-import React from 'react'
+import React, {useState ,useEffect} from 'react'
+import SetLocation from './SettingsLocation/SetLocation'
 
 function Settings (props) {
+
+const [cityName, setCityName] = useState("update your location")
+useEffect(()=>{
+  console.log("component updated");
+  
+})
+
   return (
     <div>
-      <header className='page-header'>Settings</header>
-      <h1>Settings Page</h1>
+    <SetLocation cityName={cityName}/>
     </div>
   )
 }

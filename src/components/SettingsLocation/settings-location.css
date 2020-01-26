@@ -1,0 +1,25 @@
+.main-settings-wraper{
+    
+}   
+.location-header{
+    /* margin-top: 1.5rem; */
+    padding: 1.5rem 1rem 1rem 1rem;
+    color: #53c2b2;
+    background-color: #f5f4f4;
+}
+.location-header-description{
+    color: #555656;
+    margin: 0.5rem 0rem;
+
+}
+
+span{
+    color: #53c2b2;
+}
+.location-form{
+    padding: 1rem;
+    padding: 0.5rem 1rem 1rem 1rem;
+
+    background-image: linear-gradient(to right, #B7D654,#53C2B2);
+
+}
