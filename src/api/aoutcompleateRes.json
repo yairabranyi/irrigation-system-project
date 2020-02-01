@@ -4,7 +4,7 @@
     "Key": "213181",
     "Type": "City",
     "Rank": 31,
-    "LocalizedName": "Haifa",
+    "LocalizedName": "Haifa", 
     "Country": {
     "ID": "IL",
     "LocalizedName": "Israel"

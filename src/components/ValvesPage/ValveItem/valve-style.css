@@ -1,0 +1,31 @@
+
+.valves-main-wraper{
+
+}
+
+
+.valveItem-wraper {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  height: 15rem;
+  width: 70%;
+  box-shadow: 1px 1px 3px 1px #888888;
+  padding: 1px;
+  margin: 3rem 0rem 0rem 0rem;
+  background-color: #F5F4F4;
+  
+}
+
+.valve-name{
+    margin-top: 0rem;
+    background-image: linear-gradient(to right, #B7D654,#53C2B2);
+    color: white;
+    height: 3rem;
+    width: 100%;
+    
+}
+/* .page-header1{
+position: fixed;
+top: 0px;
+} */
