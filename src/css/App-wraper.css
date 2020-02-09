@@ -63,17 +63,15 @@ a:hover, li:hover{
   margin: 0;
   /* position: sticky; */
   /* position:absolute; */
-  /* top: 50px; */
+  top: 0px;
   left:0px;
   right:0px;
   /* bottom:0px; */
   /* overflow-y:scroll;    */
 }
 
-.valves-wraper{
+/* .valves-wraper{
 display: flex;
 flex-direction: column;
-/* justify-content: center; */
-/* justify-items: center; */
 align-items: center;
-}
+} */

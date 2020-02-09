@@ -1,0 +1,25 @@
+.valves-wraper{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* justify-items: center; */
+    align-items: center;
+    }
+
+@media screen and (min-width: 400px) {
+.schedule-valve-1 {
+width: auto;
+
+}
+
+    .valves-wraper {
+      background-color: olive;
+      display: flex;
+      /* grid-column: 1fr 1fr; */
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+
+

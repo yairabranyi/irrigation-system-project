@@ -6,10 +6,12 @@ import './CorrentWeatherDisplay/current-weather-display-wraper.css'
 import './NextIrrigationDetails/next-irrigation-details.css'
 
 function Home(props) {
+    var moment = require('moment')
+  var now = console.log(moment().format('h:mm:ss'))
     return(
         <div>
         <header className="page-header">Home</header>
-        <CorrentWeatherDisplay/>
+        <CorrentWeatherDisplay time={now}/>
         <NextIrrigationDetails/>
         <WeatherForecast/>
         </div>

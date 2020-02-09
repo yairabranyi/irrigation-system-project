@@ -11,7 +11,7 @@ function CorrentWeatherDisplay (props) {
 
   return (
     <div className='current-weather-display-wraper'>
-      <CityName/>
+      <CityName time={props.now}/>
       <h4>current weather description</h4>
       <CurrentWeatherData/>
     </div>

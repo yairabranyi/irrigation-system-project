@@ -1,0 +1,50 @@
+{
+    "Headline": {
+    "EffectiveDate": "2020-02-07T19:00:00+02:00",
+    "EffectiveEpochDate": 1581094800,
+    "Severity": 3,
+    "T  ext": "Expect showery weather Friday evening through Saturday evening",
+    "Category": "rain",
+    "EndDate": "2020-02-09T01:00:00+02:00",
+    "EndEpochDate": 1581202800,
+    "MobileLink": "http://m.accuweather.com/en/il/haifa/213181/extended-weather-forecast/213181?unit=c&lang=en-us",
+    "Link": "http://www.accuweather.com/en/il/haifa/213181/daily-weather-forecast/213181?unit=c&lang=en-us"
+    },
+    "DailyForecasts": [
+    {
+    "Date": "2020-02-07T07:00:00+02:00",
+    "EpochDate": 1581051600,
+    "Temperature": {
+    "Minimum": {
+    "Value": 9.4,
+    "Unit": "C",
+    "UnitType": 17
+    },
+    "Maximum": {
+    "Value": 14.5,
+    "Unit": "C",
+    "UnitType": 17
+    }
+    },
+    "Day": {
+    "Icon": 13,
+    "IconPhrase": "Mostly cloudy w/ showers",
+    "HasPrecipitation": true,
+    "PrecipitationType": "Rain",
+    "PrecipitationIntensity": "Moderate"
+    },
+    "Night": {
+    "Icon": 12,
+    "IconPhrase": "Showers",
+    "HasPrecipitation": true,
+    "PrecipitationType": "Rain",
+    "PrecipitationIntensity": "Heavy"
+    },
+    "Sources": [
+    "AccuWeather"
+    ],
+    "MobileLink": "http://m.accuweather.com/en/il/haifa/213181/daily-weather-forecast/213181?day=1&unit=c&lang=en-us",
+    "Link": "http://www.accuweather.com/en/il/haifa/213181/daily-weather-forecast/213181?day=1&unit=c&lang=en-us"
+    }
+    ]
+    }

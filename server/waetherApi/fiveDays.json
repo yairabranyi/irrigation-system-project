@@ -1,0 +1,184 @@
+{
+    "Headline": {
+    "EffectiveDate": "2020-02-07T19:00:00+02:00",
+    "EffectiveEpochDate": 1581094800,
+    "Severity": 3,
+    "Text": "Expect showery weather Friday evening through Saturday evening",
+    "Category": "rain",
+    "EndDate": "2020-02-09T01:00:00+02:00",
+    "EndEpochDate": 1581202800,
+    "MobileLink": "http://m.accuweather.com/en/il/haifa/213181/extended-weather-forecast/213181?unit=c&lang=en-us",
+    "Link": "http://www.accuweather.com/en/il/haifa/213181/daily-weather-forecast/213181?unit=c&lang=en-us"
+    },
+    "DailyForecasts": [
+    {
+    "Date": "2020-02-07T07:00:00+02:00",
+    "EpochDate": 1581051600,
+    "Temperature": {
+    "Minimum": {
+    "Value": 9.4,
+    "Unit": "C",
+    "UnitType": 17
+    },
+    "Maximum": {
+    "Value": 14.5,
+    "Unit": "C",
+    "UnitType": 17
+    }
+    },
+    "Day": {
+    "Icon": 13,
+    "IconPhrase": "Mostly cloudy w/ showers",
+    "HasPrecipitation": true,
+    "PrecipitationType": "Rain",
+    "PrecipitationIntensity": "Moderate"
+    },
+    "Night": {
+    "Icon": 12,
+    "IconPhrase": "Showers",
+    "HasPrecipitation": true,
+    "PrecipitationType": "Rain",
+    "PrecipitationIntensity": "Heavy"
+    },
+    "Sources": [
+    "AccuWeather"
+    ],
+    "MobileLink": "http://m.accuweather.com/en/il/haifa/213181/daily-weather-forecast/213181?day=1&unit=c&lang=en-us",
+    "Link": "http://www.accuweather.com/en/il/haifa/213181/daily-weather-forecast/213181?day=1&unit=c&lang=en-us"
+    },
+    {
+    "Date": "2020-02-08T07:00:00+02:00",
+    "EpochDate": 1581138000,
+    "Temperature": {
+    "Minimum": {
+    "Value": 8.4,
+    "Unit": "C",
+    "UnitType": 17
+    },
+    "Maximum": {
+    "Value": 13.8,
+    "Unit": "C",
+    "UnitType": 17
+    }
+    },
+    "Day": {
+    "Icon": 13,
+    "IconPhrase": "Mostly cloudy w/ showers",
+    "HasPrecipitation": true,
+    "PrecipitationType": "Rain",
+    "PrecipitationIntensity": "Light"
+    },
+    "Night": {
+    "Icon": 40,
+    "IconPhrase": "Mostly cloudy w/ showers",
+    "HasPrecipitation": true,
+    "PrecipitationType": "Rain",
+    "PrecipitationIntensity": "Light"
+    },
+    "Sources": [
+    "AccuWeather"
+    ],
+    "MobileLink": "http://m.accuweather.com/en/il/haifa/213181/daily-weather-forecast/213181?day=2&unit=c&lang=en-us",
+    "Link": "http://www.accuweather.com/en/il/haifa/213181/daily-weather-forecast/213181?day=2&unit=c&lang=en-us"
+    },
+    {
+    "Date": "2020-02-09T07:00:00+02:00",
+    "EpochDate": 1581224400,
+    "Temperature": {
+    "Minimum": {
+    "Value": 7,
+    "Unit": "C",
+    "UnitType": 17
+    },
+    "Maximum": {
+    "Value": 11.2,
+    "Unit": "C",
+    "UnitType": 17
+    }
+    },
+    "Day": {
+    "Icon": 6,
+    "IconPhrase": "Mostly cloudy",
+    "HasPrecipitation": false
+    },
+    "Night": {
+    "Icon": 39,
+    "IconPhrase": "Partly cloudy w/ showers",
+    "HasPrecipitation": true,
+    "PrecipitationType": "Rain",
+    "PrecipitationIntensity": "Light"
+    },
+    "Sources": [
+    "AccuWeather"
+    ],
+    "MobileLink": "http://m.accuweather.com/en/il/haifa/213181/daily-weather-forecast/213181?day=3&unit=c&lang=en-us",
+    "Link": "http://www.accuweather.com/en/il/haifa/213181/daily-weather-forecast/213181?day=3&unit=c&lang=en-us"
+    },
+    {
+    "Date": "2020-02-10T07:00:00+02:00",
+    "EpochDate": 1581310800,
+    "Temperature": {
+    "Minimum": {
+    "Value": 2.5,
+    "Unit": "C",
+    "UnitType": 17
+    },
+    "Maximum": {
+    "Value": 10.6,
+    "Unit": "C",
+    "UnitType": 17
+    }
+    },
+    "Day": {
+    "Icon": 4,
+    "IconPhrase": "Intermittent clouds",
+    "HasPrecipitation": true,
+    "PrecipitationType": "Rain",
+    "PrecipitationIntensity": "Light"
+    },
+    "Night": {
+    "Icon": 36,
+    "IconPhrase": "Intermittent clouds",
+    "HasPrecipitation": false
+    },
+    "Sources": [
+    "AccuWeather"
+    ],
+    "MobileLink": "http://m.accuweather.com/en/il/haifa/213181/daily-weather-forecast/213181?day=4&unit=c&lang=en-us",
+    "Link": "http://www.accuweather.com/en/il/haifa/213181/daily-weather-forecast/213181?day=4&unit=c&lang=en-us"
+    },
+    {
+    "Date": "2020-02-11T07:00:00+02:00",
+    "EpochDate": 1581397200,
+    "Temperature": {
+    "Minimum": {
+    "Value": 9,
+    "Unit": "C",
+    "UnitType": 17
+    },
+    "Maximum": {
+    "Value": 12,
+    "Unit": "C",
+    "UnitType": 17
+    }
+    },
+    "Day": {
+    "Icon": 6,
+    "IconPhrase": "Mostly cloudy",
+    "HasPrecipitation": false
+    },
+    "Night": {
+    "Icon": 12,
+    "IconPhrase": "Showers",
+    "HasPrecipitation": true,
+    "PrecipitationType": "Rain",
+    "PrecipitationIntensity": "Moderate"
+    },
+    "Sources": [
+    "AccuWeather"
+    ],
+    "MobileLink": "http://m.accuweather.com/en/il/haifa/213181/daily-weather-forecast/213181?day=5&unit=c&lang=en-us",
+    "Link": "http://www.accuweather.com/en/il/haifa/213181/daily-weather-forecast/213181?day=5&unit=c&lang=en-us"
+    }
+    ]
+    }
