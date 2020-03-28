@@ -11,7 +11,7 @@
   color: #f9fafb;
   color: black;
 }
-
+ 
 .main-nav-bar {
   position: fixed;
   
@@ -70,8 +70,11 @@ a:hover, li:hover{
   /* overflow-y:scroll;    */
 }
 
-/* .valves-wraper{
+.valves-wraper{
 display: flex;
 flex-direction: column;
-align-items: center;
-} */
+justify-content: center;
+justify-items: center;
+margin: 1rem;
+/* align-items: center; */
+}

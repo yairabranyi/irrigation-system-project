@@ -12,11 +12,19 @@ width: auto;
 
 }
 
+  .valves-list-wraper  {
+    margin-top: 2.5rem;;
+  }
+.valves-items-wraper{
+
+display: flex;
+}
+
     .valves-wraper {
       background-color: olive;
       display: flex;
       /* grid-column: 1fr 1fr; */
-      flex-direction: row;
+      flex-direction: column;
       flex-wrap: wrap;
     }
   }

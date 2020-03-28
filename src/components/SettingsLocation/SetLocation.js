@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState} from 'react'
 import './settings-location.css'
 const fetch = require('node-fetch')
 
@@ -7,8 +7,19 @@ const SetLocation = () => {
 
   function handleInputChange (e) {
     setUserCity(e.target.value)
+  } 
+
+  const handleSubmit = event => {
+    event.preventDefault()
+    if (!userCity) {
+      return console.log('enter city name')
+    } else {
+      console.log('Updating user city to: ', userCity)
+      postCityName(userCity)
+    }
   }
 
+  //post the city name to SERVER side
   function postCityName (userCity1) {
     console.log('Sending CityName to server: ', userCity1)
     fetch('/cityName', {
@@ -20,29 +31,14 @@ const SetLocation = () => {
         cityName: userCity1
       })
     })
-      .then(res => {
-        const resJSON = res.json()
-      .then(resJSON => console.log('Response: ', resJSON))
-      })
-      .catch(error => console.log('Error'))
-  }
-
-  //-------------------------------------------------------
-
-  const handleSubmit = event => {
-    event.preventDefault()
-    if (!userCity) {
-      // setUserCity('')
-      return console.log('enter city name')
-    } else {
-      // event.preventDefault()
-      console.log('Updating user city to: ', userCity)
-
-      // const response fetch(url, {
-      //   meth
+      // .then(res => {
+      //   const resJSON = res
+      //     .json()
+      //     .then(resJSON =>
+      //       console.log('Response back to user console: ', resJSON)
+      //     )
       // })
-      postCityName(userCity)
-    }
+      .catch(error => console.log('Error'))
   }
 
   return (

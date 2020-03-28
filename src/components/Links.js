@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import ScheduleIcon from '@material-ui/icons/Schedule'
+// import ScheduleIcon from '@material-ui/icons/Schedule'
 import HomeOutlinedIcon from '@material-ui/icons/HomeOutlined'
-import PanToolIcon from '@material-ui/icons/PanTool'
+// import PanToolIcon from '@material-ui/icons/PanTool'
 import SettingsIcon from '@material-ui/icons/Settings'
 
 function Links (props) {

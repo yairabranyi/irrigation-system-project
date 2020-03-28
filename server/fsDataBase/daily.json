@@ -3,7 +3,7 @@
     "EffectiveDate": "2020-02-07T19:00:00+02:00",
     "EffectiveEpochDate": 1581094800,
     "Severity": 3,
-    "T  ext": "Expect showery weather Friday evening through Saturday evening",
+    "Text": "Expect showery weather Friday evening through Saturday evening",
     "Category": "rain",
     "EndDate": "2020-02-09T01:00:00+02:00",
     "EndEpochDate": 1581202800,

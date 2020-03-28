@@ -1,74 +1,46 @@
 import React, { useState } from 'react'
 import './valve-style.css'
-import BasicTimePicker from '../BasicTimePicker'
+// import BasicTimePicker from '../BasicTimePicker'
+import CyclesWraper from '../Cycles/CyclesWraper'
+import Manual from '../Manual/Manual'
+import Off from '../Off/Off'
+import Schedule from '../schedule/Schedule'
 
 function ValveItem (props) {
-  let [displayStyle, setDisplayStyle] = useState('block')
-  let [btnClickStyle, setbBtnClickStyle] = useState('white')
+  // let [displayStyle, setDisplayStyle] = useState('none')
+  // let [btnClickStyle, setbBtnClickStyle] = useState('white')
+  let [displayStyleControls, setDisplayStyleControls] = useState('none')
 
-  const schedule = () => {
-    console.log('schedual clicked')
-    // displayStyle==='none' ? setbBtnClickStyle(color: 'green') : setbBtnClickStyle(color: 'white')
-    displayStyle === 'none' ? setDisplayStyle('block') : setDisplayStyle('none')
+  // const schedule = () => {
+  //   // displayStyle ==='none' ? setbBtnClickStyle(color: 'green') : setbBtnClickStyle(color: 'white')
+  //   console.log('schedual clicked')
+  //   displayStyle === 'none' ? setDisplayStyle('block') : setDisplayStyle('none')
+  // }
+
+  const displayControls = () => {
+    console.log('displayControls clicked')
+    displayStyleControls === 'none'
+      ? setDisplayStyleControls('block')
+      : setDisplayStyleControls('none')
   }
+
   return (
     <div className='valveItem-wraper'>
-      <h4 className='valve-name'>Valve no: (i) (valveName)</h4>
-
-      <button onClick={schedule} style={{ btnClickStyle }}>
-        Schedule
+      {/* <h4 className='valve-name'>Valve no: (i) (valveName)</h4> */}
+      <button className='valve-options-button' onClick={displayControls}>
+        Valve {props.number} (valveName)
       </button>
-      <div className='schedule-valve-1' style={{ display: displayStyle }}>
-        <form className='schedule-form'>
-          <ul>
-            <li>
-              <lable>
-                Days interval:
-                <div>
-                <input type='number' name='daysInterval' />
-                </div>
-              </lable>{' '}
-              <br />
-            </li>
-            <li>
-              <lable>
-                Duration:
-                 <div><BasicTimePicker /></div>
-                {/* <input type='time' name='duration' /> */}
-              </lable>
-              <br />
-            </li>
-            <li>
-              <lable>
-                Start 1:
-                <div><BasicTimePicker /></div>
-                {/* <input type='time' name='start-1' /> */}
-              </lable>
-              <br />
-            </li>
-            <li>
-              <lable>
-                Start 2:
-                 <div><BasicTimePicker /></div>
-                {/* <input type='time' name='start-2' /> */}
-              </lable>
-              <br />
-            </li>
-            <li>
-              <lable>
-                Start 3:
-                 <div><BasicTimePicker /></div>
-                {/* <input type='time' name='start-3' /> */}
-              </lable>
-              <br />
-            </li>
-          </ul>
-        </form>
-      </div>
-      <button>Cycles</button>
-      <button>Manual</button>
-      <button>Of</button>
-      <h4>next irrigation: (nextIrrigation)</h4>
+      <section
+        className='valve-controls'
+        style={{ display: displayStyleControls }}
+      >
+        <Schedule />
+        <CyclesWraper />
+        <Manual />
+        <Off />
+        {/* <button>Off</button> */}
+        <h4>next irrigation: (nextIrrigation)</h4>
+      </section>
     </div>
   )
 }

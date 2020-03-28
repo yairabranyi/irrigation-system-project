@@ -12,7 +12,7 @@ async function getDailyForecast (locationKey) {
     const dailyWeatherForecast = {
       textDescription: resultJSON.Headline.Text,
       maxDailyTemp: dailyWeatherData[0].Temperature.Maximum.Value,
-      minDailyTemp: dailyWeatherData[0].Temperature.Maximum.Value,
+      minDailyTemp: dailyWeatherData[0].Temperature.Minimum.Value,
       Day: {
         icon: dailyWeatherData[0].Day.Icon,
         iconPhrase: dailyWeatherData[0].Day.IconPhrase,

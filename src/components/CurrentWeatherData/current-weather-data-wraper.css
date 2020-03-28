@@ -1,17 +1,21 @@
-.current-weather-data-wraper{
-    /* color: coral; */
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    
+.current-weather-data-wraper {
+  /* color: coral; */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background-color: turquoise; */
+}
+.current-weather-data-wraper li {
+  height: 2rem;
 }
 
-ul{
-    list-style-type: none;
-    text-align: left;
-    padding: 0px;
+ul {
+  list-style-type: none;
+  text-align: left;
+  padding: 0px;
+  margin-left: 1rem;
 }
 
-.main-weather-icon{
-    width: 12rem;
+.main-weather-icon {
+  width: 12rem;
 }

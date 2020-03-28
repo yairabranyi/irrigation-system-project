@@ -10,26 +10,22 @@ async function getFiveDaysForcast (locationKey) {
     const resultJSON = await result.json()
     const fiveDaysData = resultJSON.DailyForecasts
     // fiveDaysData = resultJSON.map()
-    const fiveDaysForecast = [
-      {
-        Day_0: {
-          date: fiveDaysData[0].Date,
-          maxTemp: fiveDaysData[0].Temperature.Maximum.Value,
-          minTemp: fiveDaysData[0].Temperature.Minimum.Value,
-          dayIcon: fiveDaysData[0].Day.Icon,
-          dayIconPhrase: fiveDaysData[0].Day.IconPhrase,
-          dayHasPrecipitation: fiveDaysData[0].Day.HasPrecipitation,
-          dayPrecipitationType: fiveDaysData[0].Day.PrecipitationType,
-          dayPrecipitationIntensity: fiveDaysData[0].Day.PrecipitationIntensity,
-          nightIcon: fiveDaysData[0].Night.Icon,
-          nightIconPhrase: fiveDaysData[0].Night.IconPhrase,
-          nightHasPrecipitation: fiveDaysData[0].Night.HasPrecipitation,
-          nightPrecipitationType: fiveDaysData[0].Night.PrecipitationType,
+    const fiveDaysForecast = fiveDaysData.map(item =>( 
+      {date: item.Date, maxTemp: item.Temperature.Maximum.Value,
+      minTemp: item.Temperature.Minimum.Value,
+          dayIcon: item.Day.Icon,
+          dayIconPhrase: item.Day.IconPhrase,
+          dayHasPrecipitation: item.Day.HasPrecipitation,
+          dayPrecipitationType: item.Day.PrecipitationType,
+          dayPrecipitationIntensity: item.Day.PrecipitationIntensity,
+          nightIcon: item.Night.Icon,
+          nightIconPhrase: item.Night.IconPhrase,
+          nightHasPrecipitation: item.Night.HasPrecipitation,
+          nightPrecipitationType: item.Night.PrecipitationType,
           nightPrecipitationIntensity:
-            fiveDaysData[0].Night.PrecipitationIntensity
-        }
-      }
-    ]
+            item.Night.PrecipitationIntensity, })
+    )
+
     //Update fiveDaysForecast to dB
     return 'returned Five days forecast is:', fiveDaysForecast
   } catch (error) {

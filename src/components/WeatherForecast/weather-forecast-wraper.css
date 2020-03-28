@@ -1,24 +1,32 @@
-.weather-forecast-wraper{
-display: flex;
-justify-content: space-evenly;
-
+.weather-forecast-wraper {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.daily-forecast-wraper{
-    /* display: flex;
-    flex-direction: column; */
-    box-shadow: 1px 1px 3px 1px #888888;
-    padding: 1px;    
+.daily-forecast-wraper {
+  /* display: flex;
+  flex-direction: column; */
+  margin-bottom: 4rem;
+  box-shadow: 1px 1px 3px 1px #888888;
+  padding: 1px;
 }
+.daily-forecast-wraper h6 {
+  margin: 0px;
+}
+/* .daily-forecast-wraper h6:last-of-type {
+  margin-top: 0px;
+  margin-bottom: 0rem;
+} */
 
-.single-day-icone{
-    width: 3rem;
+.single-day-icone {
+  width: 3rem;
+  padding: 0px 5px;
 }
 
 @media only screen and (max-width: 300px) {
-    .weather-forecast-wraper {
-        display: none;
-        /* flex-direction: row; */
-      background-color: lightblue;
-    }
+  .weather-forecast-wraper {
+    display: none;
+    /* flex-direction: row; */
+    background-color: lightblue;
   }
+}
