@@ -9,7 +9,7 @@ import Schedule from '../schedule/Schedule'
 function ValveItem (props) {
   // let [displayStyle, setDisplayStyle] = useState('none')
   // let [btnClickStyle, setbBtnClickStyle] = useState('white')
-  let [displayStyleControls, setDisplayStyleControls] = useState('none')
+  let [displayStyleControls, setDisplayStyleControls] = useState('block')
 
   // const schedule = () => {
   //   // displayStyle ==='none' ? setbBtnClickStyle(color: 'green') : setbBtnClickStyle(color: 'white')

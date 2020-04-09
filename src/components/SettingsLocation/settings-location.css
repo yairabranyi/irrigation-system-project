@@ -3,8 +3,9 @@
 }   
 .location-header{
     /* margin-top: 1.5rem; */
-    padding: 3.5rem 1rem 1rem 1rem;
-    color: #53c2b2;
+    padding: 3.5rem 1rem 0rem 0rem;
+    margin-bottom: 0rem;
+    color: #53c2b2; 
     background-color: #f5f4f4;
 }
 .location-header-description{
@@ -19,7 +20,7 @@ span{
 .location-form{
     padding: 1rem;
     padding: 0.5rem 1rem 1rem 1rem;
-
-    background-image: linear-gradient(to right, #B7D654,#53C2B2);
+    background-color: #B6D655;
+    /* background-image: linear-gradient(to right, #B7D654,#53C2B2); */
 
 }

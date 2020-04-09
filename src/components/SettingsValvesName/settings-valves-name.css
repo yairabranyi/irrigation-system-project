@@ -1,0 +1,13 @@
+.valves-name-header{
+    /* margin-top: 1.5rem; */
+    margin-top: 1rem;
+    padding: 1rem 1rem 0rem 1rem;
+    color: #53c2b2;
+    background-color: #f5f4f4;
+}
+
+.valves-description{
+    color: #555656;
+    margin: 0.5rem 0rem;
+
+}

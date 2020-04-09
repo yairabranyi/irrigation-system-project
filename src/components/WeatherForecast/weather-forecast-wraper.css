@@ -1,11 +1,10 @@
 .weather-forecast-wraper {
   display: flex;
+  /* flex-direction: column; */
   justify-content: space-evenly;
 }
 
 .daily-forecast-wraper {
-  /* display: flex;
-  flex-direction: column; */
   margin-bottom: 4rem;
   box-shadow: 1px 1px 3px 1px #888888;
   padding: 1px;
@@ -13,20 +12,45 @@
 .daily-forecast-wraper h6 {
   margin: 0px;
 }
-/* .daily-forecast-wraper h6:last-of-type {
-  margin-top: 0px;
-  margin-bottom: 0rem;
-} */
 
 .single-day-icone {
   width: 3rem;
   padding: 0px 5px;
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (min-width: 580px) {
+  .daily-forecast-wraper {
+    /* background-color: chocolate; */
+    width: 7rem;
+  }
+
+}
+
+@media only screen and (max-width: 360px) {
   .weather-forecast-wraper {
-    display: none;
-    /* flex-direction: row; */
-    background-color: lightblue;
+    /* display: none; */
+    flex-direction: column;
+    padding: 1rem 5px 5rem 5px;
+    /* background-color: lightblue; */
+  }
+
+  .daily-forecast-wraper{
+    /* background-color: rgb(218, 148, 116); */
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    margin-bottom: 1px;
+    padding: 0.5rem 0rem 0.5rem 0.2rem;
+  }
+  h6{
+    /* border: black 1px solid; */
+    padding: 2px;
+  }
+  .single-day-icone{
+    padding: 0px;
+  }
+  h5{
+    margin: 0px;
+    /* padding-left: 3px; */
   }
 }

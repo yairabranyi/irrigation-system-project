@@ -1,33 +1,42 @@
-.valves-wraper{
+.valves-wraper {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* justify-items: center; */
+  align-items: center;
+}
+
+@media screen and (min-width: 480px) {
+.valve-controls{
+  /* display: block; */
+  /* background-color: chocolate; */
+
+}
+
+  .schedule-valve-1 {
+    width: auto;
+  }
+
+  .valves-list-wraper {
+    margin-top: 2.5rem;
+  }
+  .valves-items-wraper {
+    /* display: flex; */
+
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: auto auto;
+    width: auto;
+  }
+
+.valveItem
+
+  .valves-wraper {
+    /* background-color: olive; */
     display: flex;
+    /* grid-column: 1fr 1fr; */
     flex-direction: column;
-    /* justify-content: center; */
-    /* justify-items: center; */
-    align-items: center;
-    }
-
-@media screen and (min-width: 400px) {
-.schedule-valve-1 {
-width: auto;
-
-}
-
-  .valves-list-wraper  {
-    margin-top: 2.5rem;;
+    flex-wrap: wrap;
   }
-.valves-items-wraper{
-
-display: flex;
 }
-
-    .valves-wraper {
-      background-color: olive;
-      display: flex;
-      /* grid-column: 1fr 1fr; */
-      flex-direction: column;
-      flex-wrap: wrap;
-    }
-  }
-
-
-

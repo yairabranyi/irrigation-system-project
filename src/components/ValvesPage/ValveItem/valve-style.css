@@ -44,7 +44,7 @@
 
 .valve-options-button{
   background-color: #b7bbbb;
-  width: 80%;
+  width: auto;
   border: none;
   outline:none;
   margin: 3px;
@@ -65,7 +65,7 @@
 
 
 .valve-controls button {
-  width: 40%;
+  width: 60%;
   border-radius: 3px;
   border: 1px solid #f5f4f4;
   color: white;
@@ -95,7 +95,7 @@
 }
 
 .schedule-valve-1 {
-  width: 50%;
+  width: 90%;
   margin: 0.5rem auto;
   padding: 0.5rem;
   background-color: #8FCE7B;
@@ -105,18 +105,22 @@
 }
 
 .schedule-valve-1 button {
-  width: 40%;
+  width: 60%;
   border-radius: 5%;
 }
-/* 
-.schedule-valve-1 button:target {
-  color: red;
-} */
-
-/* .page-header1{
-position: fixed;
-top: 0px;
-} */
+  
 li{
   height: 3.5rem;
+}
+
+@media screen and (min-width: 480px) {
+  .valve-controls{
+    display: block;
+    /* border: black 5px solid; */
+  }
+  h3{
+    margin-bottom: 2rem;
+    /* color: darkblue; */
+    font-size: 2rem;
+  }
 }

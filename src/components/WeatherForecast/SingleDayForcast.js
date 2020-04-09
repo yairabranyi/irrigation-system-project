@@ -10,10 +10,10 @@ function SingleDayForcast (props) {
         alt='icon'
       />
 
-      <h6>MaxTemp</h6>
+      <h6>MaxTemp:</h6>
       <h6>{props.maxTemp} </h6>
-      <hr/>
-      <h6>MinTemp</h6>
+      {/* <hr/> */}
+      <h6>MinTemp:</h6>
       <h6> {props.minTemp}</h6>
     </div>
   )

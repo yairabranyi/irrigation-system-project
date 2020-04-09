@@ -1,5 +1,6 @@
 import React, {useState ,useEffect} from 'react'
 import SetLocation from './SettingsLocation/SetLocation'
+import SetValvesName from './SettingsValvesName/SetValvesName'
 
 function Settings (props) {
 
@@ -12,6 +13,7 @@ useEffect(()=>{
   return (
     <div>
     <SetLocation cityName={cityName}/>
+    <SetValvesName/>
     </div>
   )
 }

@@ -5,22 +5,41 @@ var moment = require('moment')
 function Schedule (props) {
   let [displayStyle, setDisplayStyle] = useState('none')
   let [scheduleDaysInterval, setScheduleDaysInterval] = useState(0)
+  let [scheduleHours, setScheduleHours] = useState(0)
+  let [scheduleMinuts, setScheduleMinuts] = useState(0)
   let [scheduleDuration, setScheduleDuration] = useState('0')
   let [scheduleStartTime1, setScheduleStartTime1] = useState('0')
   let [scheduleStartTime2, setScheduleStartTime2] = useState('0')
 
-  useEffect(() => {
-    setScheduleDuration(
-      'Fri Mar 20 2020 00:00:00 GMT+0200 (Israel Standard Time)'
-    )
-  })
+  // useEffect(() => {
+  //   setScheduleDuration(
+  //     'Fri Mar 20 2020 00:00:00 GMT+0200 (Israel Standard Time)',[]
+  //   )
+  // })
 
   const displaySchedule = () => {
     displayStyle === 'none' ? setDisplayStyle('block') : setDisplayStyle('none')
   }
 
   const handleChange = e => {
-    setScheduleDaysInterval(e.target.value)
+    switch (e.target.name) {
+      case 'scheduleDaysInterval':
+        setScheduleDaysInterval(e.target.value)
+        console.log('scheduleDaysInterval')
+        break
+      case 'scheduleHours':
+        // code block
+        setScheduleHours(e.target.value)
+        console.log('scheduleHours')
+        break
+      case 'scheduleMinuts':
+        // code block
+        setScheduleMinuts(e.target.value)
+        console.log('setScheduleMinuts')
+        break
+      default:
+      // code block g
+    }
   }
 
   const handleSubmit = e => {
@@ -28,7 +47,9 @@ function Schedule (props) {
     console.log(`Form submited...
     name: ${e.target} 
     scheduleDaysInterval: ${scheduleDaysInterval}
-    scheduleDuration: ${moment(scheduleDuration._d).format('HH:mm:ss')}
+    scheduleSeconds: ${scheduleHours}
+    scheduleMinuts: ${scheduleMinuts}
+
     scheduleStartTime1: ${moment(scheduleStartTime1._d).format('HH:mm:ss')}
     scheduleStartTime2: ${moment(scheduleStartTime2._d).format('HH:mm:ss')}
     `)
@@ -40,6 +61,7 @@ function Schedule (props) {
       <div className='schedule-valve-1' style={{ display: displayStyle }}>
         <form onSubmit={handleSubmit} className='schedule-form'>
           <ul>
+        
             <li>
               <label>Days interval:</label>
               <div>
@@ -57,32 +79,32 @@ function Schedule (props) {
               <br />
             </li>
             <li>
-              <label>minuts:</label>
+              <label>hours:</label>
               <div>
                 <input
                   onChange={handleChange}
                   type='number'
-                  name='scheduleDaysInterval'
-                  id='scheduleDaysInterval'
+                  name='scheduleHours'
+                  id='scheduleHours'
                   min='0'
-                  max='30'
-                  value={scheduleDaysInterval}
+                  max='5'
+                  value={scheduleHours}
                 />
                 <br />
               </div>
               <br />
             </li>
             <li>
-              <label>seconds:</label>
+              <label>min:</label>
               <div>
                 <input
                   onChange={handleChange}
                   type='number'
-                  name='scheduleDaysInterval'
-                  id='scheduleDaysInterval'
+                  name='scheduleMinuts'
+                  id='scheduleMinuts'
                   min='0'
-                  max='30'
-                  value={scheduleDaysInterval}
+                  max='59'
+                  value={scheduleMinuts}
                 />
                 <br />
               </div>
