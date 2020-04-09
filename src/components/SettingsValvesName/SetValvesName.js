@@ -2,6 +2,11 @@ import React, { useState } from 'react'
 import './settings-valves-name.css'
 
 const SetValvesName = () => {
+
+const handleChange = () =>{
+  console.log("HandlChange")
+
+}
   return (
     <div className='main-settings-wraper'>
       <h3 className='valves-name-header'>Valves Name</h3>
@@ -14,7 +19,7 @@ const SetValvesName = () => {
           placeholder='Valve 1'
           name='valve-1'
           id='1'
-        //   onChange={handleInputChange}
+          onChange={handleChange}
         //   value={userCity}
         />
         <input
